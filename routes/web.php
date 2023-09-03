@@ -35,6 +35,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
 });
 
+
+
 // Socialite Routes
 
 Route::get('sign-in-google', [UserController::class, 'google'])->name('user.login.google');
